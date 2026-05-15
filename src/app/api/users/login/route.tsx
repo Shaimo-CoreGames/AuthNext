@@ -42,10 +42,7 @@ export async function POST(request: NextResponse) {
         })
         
         return response
-
-
-
-
+        
     }
     catch (error: any) {
         return NextResponse.json('message: ' + error.message, { status: 500 })

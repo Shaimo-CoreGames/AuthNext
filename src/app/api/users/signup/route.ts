@@ -41,12 +41,7 @@ export async function POST(request: NextResponse) {
             success: true,
             user: savedUser
         })
-
-
-
-
-
-
+        
     }
     catch (error: any) {
         return NextResponse.json('message: ' + error.message, { status: 500 })
